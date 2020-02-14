@@ -11,8 +11,8 @@
         //     'Hello from embedded JavaScript. This is my first HTML adn Javascript application.'
         // );
 
-        let a = 33;
-        let b = 19;
+        // let a = 33;
+        // let b = 19;
         // alert(a+b);
         // let c= prompt('Value 1:', 0);
         // let d = prompt('Value 2:', 0);
@@ -20,27 +20,27 @@
         // alert(e);
         // console.log(e);
 
-        // let f= parseInt(c);
-        // let g = parseInt(d);
-        // let h =f+g;
-        // alert(h);
+        let f= parseInt(c);
+        let g = parseInt(d);
+        let h =f+g;
+        alert(h);
 
         let isTheInputNumeric = prompt('Enter an alpha character');
-        // console.log(isTheInputNumeric);
-        // alert(isNaN(isTheInputNumeric));
+        console.log(isTheInputNumeric);
+        alert(isNaN(isTheInputNumeric));
 
-        // try{
-        //     let numberOrLetterInput = prompt('PLease enter a number or a letter');
-        //     if(isNaN(numberOrLetterInput)){
-        //         throw new Error('Inputs are invalid.')
-        //     }
-        // } catch (error) {
-        //     alert(error.message);
-        // }
+        try{
+            let numberOrLetterInput = prompt('PLease enter a number or a letter');
+            if(isNaN(numberOrLetterInput)){
+                throw new Error('Inputs are invalid.')
+            }
+        } catch (error) {
+            alert(error.message);
+        }
     </script>
 </head>
 <body>
-    <h1>HTML an dJavaScript Exercise</h1>
+    <h1>HTML an JavaScript Exercise</h1>
     <script>
         document.writeln(`<p>The input <strong>${isTheInputNumeric}</strong> is not numeric, true or false?</p>`
         );
